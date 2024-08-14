@@ -1,12 +1,53 @@
-# Игнорировать все файлы с расширением .code-workspace
-*.code-workspace
+# Ignore build directories
+/build/
+/bin/
+/out/
+/Debug/
+/Release/
 
-# Игнорировать папку .vscode
-.vscode/
+# Ignore object files and executables
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.lib
+*.so
+*.dll
 
-# Игнорировать папку build
-build/
-
-# Игнорировать временные файлы и папки
-*.tmp
+# Ignore temporary files and logs
 *.log
+*.tmp
+*.swp
+
+# Ignore IDE-specific files
+/.vscode/
+/.idea/
+/*.suo
+*.ncb
+*.sdf
+*.suo
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Windows system files
+Thumbs.db
+Desktop.ini
+
+# Ignore dependency directories (e.g., from package managers)
+/CMakeFiles/
+/CMakeCache.txt
+*.cmake
+
+# Ignore user-specific files
+*.user
+*.userprefs
+
+# Ignore compiled files and generated code
+*.generated
+*.gch
+
+*.cmake.user
+*.cmake.gcno
+*.cmake.gcda
